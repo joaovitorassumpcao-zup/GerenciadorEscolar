@@ -9,10 +9,8 @@ import java.io.Serializable;
 @Setter
 @Entity
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-@ToString
-@RequiredArgsConstructor
+@NoArgsConstructor
 @Table(name = "TB_alunos")
 public class Aluno implements Serializable {
 
