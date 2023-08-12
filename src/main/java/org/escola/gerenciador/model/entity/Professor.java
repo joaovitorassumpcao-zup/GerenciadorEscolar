@@ -2,19 +2,16 @@ package org.escola.gerenciador.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import lombok.extern.apachecommons.CommonsLog;
-import org.hibernate.proxy.HibernateProxy;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Objects;
 
 @Getter
-@Setter
+@ToString
 @Entity
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "TB_professores")
 public class Professor implements Serializable {
 

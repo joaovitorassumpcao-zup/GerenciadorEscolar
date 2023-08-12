@@ -6,11 +6,11 @@ import lombok.*;
 import java.io.Serializable;
 
 @Getter
-@Setter
+@ToString
 @Entity
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "TB_cursos")
 public class Curso implements Serializable {
 
@@ -19,10 +19,10 @@ public class Curso implements Serializable {
     @Column(nullable = false)
     private Long id;
 
-    @Column(length = 50,nullable = false)
+    @Column(length = 50, nullable = false)
     private String nome;
 
-    @Column(length = 5,nullable = false)
+    @Column(length = 5, nullable = false)
     private Integer cargaHoraria;
 
     @OneToOne(cascade = CascadeType.ALL, optional = false)

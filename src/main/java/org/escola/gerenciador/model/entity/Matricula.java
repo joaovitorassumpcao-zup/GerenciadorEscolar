@@ -8,11 +8,11 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 @Getter
-@Setter
+@ToString
 @Entity
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "TB_matriculas")
 public class Matricula implements Serializable {
 
